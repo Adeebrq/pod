@@ -1,0 +1,73 @@
+# Dependencies
+node_modules/
+/.pnp
+.pnp.js
+yarn.lock
+package-lock.json
+
+# Next.js
+/.next/
+/out/
+.swc/
+
+# Build outputs
+/build/
+/dist/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Testing
+coverage/
+.nyc_output/
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Optional npm cache
+.npm/
+.eslintcache
+.stylelintcache
+
+# Misc
+*.bak
+.cache/
+.turbo/
+.env.local.backup
+
+# OS
+Thumbs.db
+
+# TypeScript
+*.tsbuildinfo
+dist/
+
+# Blockchain/Web3 specific
+.anchor/
+.env.test
+keypairs/
+*.pda
