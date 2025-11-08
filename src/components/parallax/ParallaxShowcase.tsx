@@ -27,7 +27,7 @@ export default function ParallaxShowcase() {
       </div>
 
       {/* Desktop/Tablet: Parallax with sticky video */}
-      <div className='relative rounded-3xl w-full hidden sm:block'>
+      <div className='relative rounded-3xl w-full hidden sm:block '>
         <div className='sticky top-[5vh] h-[800px] rounded-3xl w-full overflow-hidden z-0'>
           <video
             autoPlay
@@ -40,7 +40,7 @@ export default function ParallaxShowcase() {
           </video>
         </div>
 
-        <div className="relative -mt-[800px] z-10">
+        <div className="relative -mt-[800px] z-10 text-white">
           {projects.map((project, i) => {
             const targetScale = 1 - ((projects.length - i) * 0.05);
             return (

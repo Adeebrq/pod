@@ -1,6 +1,13 @@
 import { Camera, Mesh, Plane, Program, Renderer, Texture, Transform } from 'ogl';
 import { useEffect, useRef } from 'react';
 import image from "../assets/carasoul.png"
+import card1 from "../assets/card11.png"
+import card2 from "../assets/card12.png"
+import card3 from "../assets/card13.png"
+import card4 from "../assets/card14.png"
+import card5 from "../assets/card15.png"
+import card6 from "../assets/card16.png"
+
 
 type GL = Renderer['gl'];
 
@@ -314,7 +321,7 @@ class Media {
   }
 
   update(scroll: { current: number; last: number }, direction: 'right' | 'left') {
-    this.plane.position.x = this.x - scroll.current - this.extra;
+    this.plane.position.x = this.x - scroll.current - this.extra + 0.5;
 
     const x = this.plane.position.x;
     const H = this.viewport.width / 2;
@@ -364,13 +371,13 @@ class Media {
       }
     }
     this.scale = this.screen.height / 1500;
-    this.plane.scale.y = (this.viewport.height * (900 * this.scale)) / this.screen.height;
+    this.plane.scale.y = (this.viewport.height * (1200 * this.scale)) / this.screen.height;
     this.plane.scale.x = (this.viewport.width * (700 * this.scale)) / this.screen.width;
     this.plane.program.uniforms.uPlaneSizes.value = [this.plane.scale.x, this.plane.scale.y];
     this.padding = 2;
     this.width = this.plane.scale.x + this.padding;
     this.widthTotal = this.width * this.length;
-    this.x = this.width * this.index;
+    this.x = this.width * this.index + 0.5;
   }
 }
 
@@ -479,77 +486,57 @@ class App {
   ) {
     const defaultItems = [
       {
-        image: image,
+        image: card1,
+        text: ''
+      },
+      {
+        image: card2,
+        text: ''
+      },
+      {
+        image: card3,
         text: ''
 
       },
       {
-        image: image,
+        image: card4, 
         text: ''
       },
       {
-        image: image,
-
+        image: card5, 
         text: ''
-
       },
       {
-        image: image,
-
-        text: ''
-
-
-      },
-      {
-        image: image,
-
-        text: ''
-
-
-      },
-      {
-        image: image,
-
-        text: ''
-
-
-      },
-      {
-        image: image,
-
+        image:  card6,
         text: ''
 
       },
       {
-        image: image,
-
+        image: card1,
         text: ''
       },
       {
-        image: image,
-
+        image: card2,
         text: ''
-
       },
       {
-        image: image,
-
+        image: card3,
         text: ''
 
       },
       {
-        image: image,
-
+        image: card4, 
+        text: ''
+      },
+      {
+        image: card5, 
+        text: ''
+      },
+      {
+        image:  card6,
         text: ''
 
       },
-      {
-        image: image,
-        text: ''
-
-
-
-      }
     ];
     const galleryItems = items && items.length ? items : defaultItems;
     this.mediasImages = galleryItems.concat(galleryItems);

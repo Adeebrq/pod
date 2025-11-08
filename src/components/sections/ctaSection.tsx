@@ -124,19 +124,10 @@ export default function GetInTouchSection() {
           >
             <KeywordButton
               keyword="Reserve Your Venue"
+              animated={false}
             />
           </motion.div>
 
-          {/* Secondary Button */}
-          <motion.button
-            variants={secondaryButtonVariants}
-            initial="initial"
-            whileHover="whileHover"
-            whileTap="whileTap"
-            className="px-8 py-3 rounded-full font-semibold text-[#0f2a4a] border-2 border-[#0f2a4a] hover:bg-[#0f2a4a] hover:text-white transition-colors duration-200"
-          >
-            Keyword
-          </motion.button>
         </motion.div>
       </motion.div>
     </section>

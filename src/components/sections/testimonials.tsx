@@ -23,31 +23,45 @@ const TestimonialSection: React.FC = () => {
   const testimonials: Testimonial[] = [
     {
       id: 1,
-      text: 'Lorem ipsum dolor Lorem ipsum dolor sit amet consecteturaArcuui.Lorem ipsum dolor.Lorem ipsum dolor Lorem ipsum dolor sit amet consecteturaArcuui.Lorem ipsum dolor sit amet consecteturaArcuui.Lorem i...',
-      name: 'Name',
-      role: 'Lorem ipsum',
-      avatar: 'https://via.placeholder.com/48',
+      text: 'From our initial consultation to the flawless execution, your team demonstrated a deep understanding of our vision. The creative input was invaluable and enhanced the overall experience for our attendees. Every facet of the event ran seamlessly, and the attention to detail was truly impressive.',
+      name: 'Mitchell',
+      role: 'Corporate Events Director, Tech Innovations Inc.',
+      avatar: 'https://i.pravatar.cc/150?img=1',
     },
     {
       id: 2,
-      text: 'Lorem ipsum dolor Lorem ipsum dolor sit am ipsum dolor.Lorem ipsum dolor Lorem ipsum dolor sit amet consecteturaArcuui.Lorem ipsum dolor sit amet consecteturaArcuui.Lorem i...',
-      name: 'Narrrme',
-      role: 'Lorem ipsum',
-      avatar: 'https://via.placeholder.com/48',
+      text: 'Working with this team was an absolute pleasure! They oversaw the planning and coordination of our large multi-day conference with 200+ participants. Despite extremely tight deadlines, everything went off without a hitch. Their expertise and communication gave us complete confidence throughout the entire process.',
+      name: 'James Rodriguez',
+      role: 'Marketing Manager, Global Solutions Ltd.',
+      avatar: 'https://i.pravatar.cc/150?img=12',
     },
     {
       id: 3,
-      text: 'Lorem ipsum dolor Lorem ipsum dolororem i...',
-      name: 'Narrrdscme',
-      role: 'Lorem ipsum',
-      avatar: 'https://via.placeholder.com/48',
+      text: 'The professionalism and attention to detail exhibited throughout the entire event planning process was exceptional. Their proactive approach to problem-solving and open communication made everything efficient. The venue selection, vendor coordination, and overall execution reflected a high standard of excellence.',
+      name: 'Priya Sharma',
+      role: 'CEO, Innovation Hub',
+      avatar: 'https://i.pravatar.cc/150?img=5',
+    },
+    {
+      id: 4,
+      text: 'I have worked with them on several events, and each time they deliver fantastic results. Their attention to detail and exceptional project management skills are unmatched. Not only do they handle logistics perfectly, but they also provide strategic ideas to enhance the overall experience.',
+      name: 'Michael Chen',
+      role: 'Operations Head, Summit Enterprises',
+      avatar: 'https://i.pravatar.cc/150?img=13',
+    },
+    {
+      id: 5,
+      text: 'Our company celebration was transformed into an unforgettable experience! The team listened to our vision and executed it flawlessly. When I was unable to be present during setup, they stepped in seamlessly to ensure everything was perfect. Everyone raved about the event for weeks!',
+      name: 'Amanda Foster',
+      role: 'HR Director, Creative Ventures',
+      avatar: 'https://i.pravatar.cc/150?img=9',
     },
   ];
 
   const stats = [
-    { number: '100', label: 'Lorem ipsum' },
-    { number: '100', label: 'Lorem ipsum' },
-    { number: '100', label: 'Lorem ipsum' },
+    { number: '500+', label: 'Events Delivered' },
+    { number: '50K+', label: 'Happy Attendees' },
+    { number: '98%', label: 'Client Satisfaction' },
   ];
 
   const handlePrev = () => {
@@ -167,23 +181,25 @@ const TestimonialSection: React.FC = () => {
             variants={cardVariants}
             initial="hidden"
             animate="visible"
-            className="w-full h-auto sm:h-64 bg-white rounded-2xl p-6 sm:p-8 shadow-xl flex flex-col"
+            className="w-full h-auto sm:h-72 bg-white rounded-2xl p-6 sm:p-8 shadow-xl flex flex-col"
           >
             {/* Testimonial Quote - Fixed height scroll if needed */}
             <motion.p
               variants={itemVariants}
-              className="text-gray-800 text-base leading-relaxed mb-6 sm:mb-8 flex-1 overflow-hidden"
+              className="text-gray-800 text-base leading-relaxed mb-6 sm:mb-8 flex-1 overflow-auto"
             >
               "{current.text}"
             </motion.p>
 
             {/* Avatar and Info - Fixed at bottom */}
             <motion.div variants={itemVariants} className="flex items-center gap-3 sm:gap-4 flex-shrink-0">
-              <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gray-300 rounded-full flex-shrink-0 flex items-center justify-center">
-                <span className="text-gray-500 text-xs">Avatar</span>
-              </div>
+              <img 
+                src={current.avatar} 
+                alt={current.name}
+                className="w-12 h-12 sm:w-14 sm:h-14 rounded-full object-cover flex-shrink-0"
+              />
               <div>
-                <p className="font-semibold text-gray-900">{current.name}</p>
+                <p className="font-semibold text-gray-900 text-sm sm:text-base">{current.name}</p>
                 <p className="text-gray-500 text-xs sm:text-sm">{current.role}</p>
               </div>
             </motion.div>

@@ -1,36 +1,36 @@
 // data.ts
 export const projects = [
   {
-    title: "Lorem ipsum dolor.",
-    description: "Lorem ipsum dolor Lorem ipsum dolor sit amet consectetur Arcui.Lorem ipsum dolor.Lorem ipsum dolor sit amet consectetur Arcui.Lorem ipsum dolor sit amet consectetur Arcui.Lorem ipsum dolor.Lorem ipsum dolor",
-    src: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop",
+    title: "AI & Machine Learning Summit 2025",
+    description: "Join industry leaders and innovators for a comprehensive exploration of artificial intelligence and machine learning trends. Experience hands-on workshops, keynote presentations, and networking sessions focused on practical AI implementation, deep learning frameworks, and emerging ML technologies shaping the future of tech.",
+    src: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&h=600&fit=crop",
     link: "https://example.com",
     color: "#E8E9E8",
-    tag: "Tag 1",
-    date: "Lorem ipsum dolor",
-    time: "Lorem ipsum dolor",
-    capacity: "Lorem ipsum dolor"
+    tag: "Tech Conference",
+    date: "15 December 2025",
+    time: "9:00 AM - 6:00 PM",
+    capacity: "500 attendees"
   },
   {
-    title: "Event Title 2",
-    description: "Description text here",
-    src: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop",
+    title: "Full-Stack Developer Workshop",
+    description: "An intensive hands-on workshop covering modern web development with React, Next.js, Node.js, and cloud deployment strategies. Perfect for developers looking to enhance their full-stack skills with real-world project building, best practices, and interactive coding sessions led by experienced engineers.",
+    src: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800&h=600&fit=crop",
     link: "https://example.com",
     color: "#D5D9E3",
-    tag: "Tag 2",
-    date: "15 Nov 2025",
-    time: "2:00 PM",
-    capacity: "50 people"
+    tag: "Workshop",
+    date: "22 November 2025",
+    time: "10:00 AM - 4:00 PM",
+    capacity: "75 participants"
   },
   {
-    title: "Event Title 3",
-    description: "Description text here",
-    src: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop",
+    title: "Blockchain & Web3 Developer Meetup",
+    description: "Connect with fellow blockchain enthusiasts and Web3 developers in this community-driven meetup. Explore Solana smart contracts, NFT marketplace development, DeFi protocols, and decentralized applications through live demos, panel discussions, and collaborative problem-solving sessions with industry experts.",
+    src: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800&h=600&fit=crop",
     link: "https://example.com",
     color: "#C9CDD8",
-    tag: "Tag 3",
-    date: "20 Nov 2025",
-    time: "3:30 PM",
-    capacity: "100 people"
+    tag: "Community Meetup",
+    date: "30 November 2025",
+    time: "6:00 PM - 9:00 PM",
+    capacity: "150 people"
   }
 ];

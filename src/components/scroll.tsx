@@ -1,16 +1,15 @@
 import React from 'react';
 import BgVideo from "../assets/bgVideo.mp4"
 import sparkles from "../assets/sparkles.svg"
-
 const bannerItems = [
-  'Timeless Craftsmanship',
-  'Modern Elegance',
-  'Timeless Craftsmanship',
-  'Modern Elegance',
-  'Timeless Craftsmanship',
-  'Modern Elegance',
-  'Timeless Craftsmanship',
-  'Modern Elegance',
+  'Elegant Event Spaces',
+  'Modern Venue',
+  'Stunning Views',
+  'Indoor & Outdoor',
+  'Perfect for Celebrations',
+  'Premium Amenities',
+  'Versatile Layouts',
+  'Unforgettable Experiences',
 ];
 
 const ScrollingBanner: React.FC = () => {

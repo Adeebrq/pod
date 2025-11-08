@@ -49,13 +49,14 @@ const Footer = () => {
   }}
 />
 
-            <p className="text-gray-400 text-sm leading-relaxed mb-6 mt-4">
-              Lorem ipsum dolor Lorem ipsum dolor sit amet consecteturaruii.Lorem
-              <br />
-              Lorem ipsum dolor Lorem ipsum dolor sit amet consecteturaruii.Lorem
-              <br />
-              ipsum dolor.Lorem
-            </p>
+<p className="text-gray-400 text-sm leading-relaxed mb-6 mt-4">
+  Transforming moments into unforgettable memories. We craft exceptional
+  <br />
+  events with precision, creativity, and dedication—turning your vision
+  <br />
+  into a flawless reality, from concept to celebration.
+</p>
+
             {/* Social Links */}
             <div className="flex gap-4">
               <a 
@@ -109,15 +110,15 @@ const Footer = () => {
             <div className="space-y-4">
               <a href="tel:9087654321" className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors">
                 <Phone size={20} />
-                <span>9087654321</span>
+                <span>123456789</span>
               </a>
               <a href="mailto:info@launchpod.com" className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors">
                 <Mail size={20} />
-                <span>info@launchpod.com</span>
+                <span>info@info.com</span>
               </a>
               <div className="flex items-start gap-3 text-gray-400">
                 <MapPin size={20} className="flex-shrink-0 mt-1" />
-                <span className="text-sm">#191, 3rd Floor, Hamid Building, Whites Road, Anna Salai, Chennai – 600006.</span>
+                <span className="text-sm">Santo António da Serra, 9200-152 Machico, Portugal</span>
               </div>
             </div>
           </div>
@@ -126,17 +127,6 @@ const Footer = () => {
         {/* Bottom Footer */}
         <div className="flex flex-col md:flex-row justify-between items-center pt-8 text-sm text-gray-500">
           <div>© 2025 The Launchpod. All rights reserved.</div>
-          <div className="text-center">
-            Designed and Developed by{' '}
-            <a 
-              href="https://cruxcreations.com" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="hover:text-white transition-colors underline"
-            >
-              @Cruxcreations
-            </a>
-          </div>
           <div className="flex gap-6">
             <a href="#" className="hover:text-white transition-colors underline">Privacy Policy</a>
             <a href="#" className="hover:text-white transition-colors underline">Terms of Service</a>
