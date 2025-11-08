@@ -1,8 +1,9 @@
-import React, { useEffect, useRef, useState } from 'react';
-import { motion } from 'framer-motion';
+import { useEffect, useRef, useState } from 'react';
+import { motion,  Variants } from 'framer-motion';
 import CircularGallery from "../CircularGallery";
 
-const fadeInUpVariants = {
+
+const fadeInUpVariants: Variants = {
   hidden: {
     opacity: 0,
     y: 20,

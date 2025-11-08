@@ -1,11 +1,11 @@
 'use client';
 
 import React from 'react';
-import { motion } from 'framer-motion';
+import { motion, Variants } from 'framer-motion';
 import { KeywordButton } from '../KeywordButton';
 
 // Container variant with staggered children
-const containerVariants = {
+const containerVariants: Variants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
@@ -17,7 +17,7 @@ const containerVariants = {
 };
 
 // Individual item animations
-const itemVariants = {
+const itemVariants: Variants = {
   hidden: { 
     opacity: 0, 
     y: 30,
@@ -33,7 +33,7 @@ const itemVariants = {
 };
 
 // Heading animation with scale
-const headingVariants = {
+const headingVariants: Variants = {
   hidden: { 
     opacity: 0, 
     y: 40,
@@ -48,31 +48,6 @@ const headingVariants = {
       ease: [0.22, 1, 0.36, 1],
     },
   },
-};
-
-// Button hover animation
-const buttonHoverVariants = {
-  initial: { scale: 1, y: 0 },
-  whileHover: { 
-    scale: 1.05,
-    y: -4,
-    transition: {
-      duration: 0.3,
-      ease: 'easeOut',
-    },
-  },
-};
-
-// Secondary button animation
-const secondaryButtonVariants = {
-  initial: { scale: 1 },
-  whileHover: { 
-    scale: 1.02,
-    transition: {
-      duration: 0.2,
-    },
-  },
-  whileTap: { scale: 0.98 },
 };
 
 export default function GetInTouchSection() {
@@ -107,8 +82,8 @@ export default function GetInTouchSection() {
           variants={itemVariants}
           className="text-center text-gray-700 text-lg max-w-2xl mb-12"
         >
-            Book The Launchpod - Chennai’s most versatile, tech-enabled venue. 
-            Let’s bring your vision to life in the city’s most dynamic event space.
+          Book The Launchpod - Chennai's most versatile, tech-enabled venue. 
+          Let's bring your vision to life in the city's most dynamic event space.
         </motion.p>
 
         {/* Button Group */}
@@ -116,18 +91,23 @@ export default function GetInTouchSection() {
           variants={itemVariants}
           className="flex flex-row gap-4 items-center justify-center flex-wrap"
         >
-          {/* Primary Button */}
+          {/* Primary Button with Hover Animation */}
           <motion.div
-            variants={buttonHoverVariants}
-            initial="initial"
-            whileHover="whileHover"
+            whileHover={{ 
+              scale: 1.05,
+              y: -4,
+            }}
+            whileTap={{ scale: 0.95 }}
+            transition={{
+              duration: 0.3,
+              ease: 'easeOut',
+            }}
           >
             <KeywordButton
               keyword="Reserve Your Venue"
               animated={false}
             />
           </motion.div>
-
         </motion.div>
       </motion.div>
     </section>
